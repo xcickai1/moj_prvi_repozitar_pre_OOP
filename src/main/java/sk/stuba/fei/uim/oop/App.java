@@ -2,22 +2,25 @@ package sk.stuba.fei.uim.oop;
 
 public class App {
     public static void main(String[] args){
-        System.out.println("Hello World");
+        if (2 != 1)
+            System.out.println("hello");
+        else
+            System.out.print("world");
 
-        int celecislo =5;
-        long celeCisloVecie =5L;
-        char znak = 'a';
-        String retazec = "a";
-        float desatineSinglePrecision = 5.5f;
-        double desatinedoubleprecision =5.5;
-        int podiel =2/3; //0
-        System.out.println(podiel);
-        int zvisok = 2%3; //2
-        System.out.println(zvisok);
-        float podielDesatinny = 2/3; // vypise 0 , lebo robim podiel z celima
-        float podielDesatinny1 = 2/3.0f;
-        // boolean pravda = ture;
-
-
+        for(int a = 0;a<6;a++) {
+            switch (a) {
+                case 1:
+                    System.out.println("a je 1");
+                    break;
+                case 2:
+                    System.out.println("a je 2");
+                    break;
+                case 3:
+                case 4:
+                    System.out.println("a je 3 alebo 4");
+                default:
+                    System.out.println(String.format("a je %d", a));
+            }
+        }
     }
 }
